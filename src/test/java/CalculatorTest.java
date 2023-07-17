@@ -17,10 +17,10 @@ public class CalculatorTest {
 
     @Test
     void SumTest(){
-        Mockito.when(countable.count()).thenReturn(12L);
+        Mockito.when(countable.count()).thenReturn(10L);
         Calculator calculator = new Calculator();
         long actual = calculator.sum(List.of(countable, countable));
 
-        Assertions.assertEquals(24L , actual);
+        Assertions.assertEquals(20L , actual);
     }
 }
